@@ -22,11 +22,14 @@ public class Essai {
 		Gmail.ajoutClient(Timochut);
 		
 		System.out.println("Les personnes enregistrés sur le serveur sont : " + Gmail.listeClient());
+		
 		Arthur.envoiMessage(Gmail, Arthur, message1);
 		Arthur.envoiMessage(Gmail, Arthur, message1Bis);
 		System.out.println(Gmail.ListeMessages());
+		
 		Timochut.envoiMessage(Gmail, Timochut, message2);
 		System.out.println(Gmail.ListeMessages());
+		
 		System.out.println(Timochut.recupMessage(Timochut, lstMessage1));
 
 	}
